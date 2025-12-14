@@ -1,9 +1,4 @@
-// Script/signup.js (robust & compatible)
-// - flexible button/form detection
-// - Enter-key support
-// - disables UI while hashing
-// - stores accounts with { fullName, email, username, passwordHash }
-// - sets localStorage.justSignedUp so login can prefill if desired
+
 
 document.addEventListener('DOMContentLoaded', () => {
   // find signup trigger: prefer #signupBtn, fallback to .signup-button, fallback to form submit

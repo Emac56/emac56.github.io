@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (account.fullName) localStorage.setItem("fullName", account.fullName);
     if (account.email) localStorage.setItem("email", account.email);
 
-    window.location.href = "home.html";
+    window.location.href = "index.html";
   });
 
   // SHA-256 hashing

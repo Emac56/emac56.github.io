@@ -59,13 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.removeItem('loggedIn');
       localStorage.removeItem('username');
       // optional: keep fullName/email/accounts or remove as you prefer
-      window.location.href = 'home.html';
+      window.location.href = 'index.html';
     });
   }
 
   if (btnHome) {
     btnHome.addEventListener('click', () => {
-      window.location.href = 'home.html';
+      window.location.href = 'index.html';
     });
   }
 
