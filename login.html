@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="Styles/user/login.css">
+
+  <title>Login</title>
+</head>
+<body style="background-image: url('Photos/bg.jpg')">
+
+  <div class="login-container">
+    <h2>Login</h2>
+
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Username" autocomplete="username">
+    </div>
+
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+    </div>
+
+    <button class="login-button">Login</button>
+
+    <br><br>
+
+    <button class="login-button" onclick="window.location.href='signup.html'">Sign Up</button>
+    <br>
+    <button class="login-button" onclick="window.location.href='home.html'">Back to Home</button>
+  </div>
+
+  <script src="Script/auth/passwordToggle.js"></script>
+  <script src="Script/auth/login.js"></script>
+  <script src="Script/data/globalSaveData.js"></script>
+</body>
+</html>

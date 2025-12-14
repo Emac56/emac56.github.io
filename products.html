@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Josephine's Special Bukayo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <link rel="stylesheet" href="Styles/pages/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-image: url(Photos/bg.jpg);">
+
+    <!--Navbar-->
+    <nav class="animateNav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="checkout.html">🛒 Cart (<span id="cartCounter">0</span>)</a></li>
+            <li><a href="login.html" id="loginBtn">Log in</a></li>
+        </ul>
+    </nav>
+
+    <section class="products-section" id="animate">
+        <div class="container">
+            <div class="products-title">Our Products</div>
+
+            <div class="product-list">
+
+                <div class="product-box">
+                    <img src="Photos/orig.jpg" alt="Original Bukayo">
+                    <h3>Original Bukayo</h3>
+                    <p>Sweet, classic, and delicious coconut Bukayo.</p>
+                    <p>1 Pack.</p>
+                    <span class="product-price">₱30</span>
+                    <center><button class="add-cart-button" onclick="addProductCart('Original Bukayo', 30)">Add to Cart</button></center>
+                </div>
+
+                <div class="product-box">
+                    <img src="Photos/ube.jpg" alt="Ube Bukayo">
+                    <h3>Ube Bukayo</h3>
+                    <p>Freshly made Ube-flavored bukayo.</p>
+                    <p>1 Pack.</p>
+                    <span class="product-price">₱40</span>
+                    <center><button class="add-cart-button" onclick="addProductCart('Ube Bukayo', 40 )">Add to Cart</button></center>
+                </div>
+
+                <div class="product-box">
+                    <img src="Photos/vanilla.jpg" alt="Vanilla Bukayo">
+                    <h3>Vanilla Bukayo</h3>
+                    <p>Aromatic vanilla twist on our classic bukayo.</p>
+                    <p>1 Pack.</p>
+                    <span class="product-price">₱35</span>
+                    <center><button class="add-cart-button" onclick="addProductCart('Vanilla Bukayo', 35)">Add to Cart</button></center>
+                </div>
+                
+                <div class="product-box">
+                    <img src="Photos/palitaw.jpg" alt="Bukayo with Palitaw">
+                    <h3>Bukayo with Palitaw</h3>
+                    <p>Chewy palitaw topped with sweet, caramelized bukayo — a classic Filipino treat!</p>
+                    <p>1 Pack.</p>
+                    <span class="product-price">₱35</span>
+                    <center><button class="add-cart-button" onclick="addProductCart('Bukayo with Palitaw', 50)">Add to Cart</button></center>
+                </div>
+                
+                <div class="product-box">
+                    <img src="Photos/Candy.jpg" alt="Coconut Candy">
+                    <h3>Coconut Candy</h3>
+                    <p>Chewy and sweet coconut candy — a bite of tropical delight</p>
+                    <p>1 Pack.</p>
+                    <span class="product-price">₱30</span>
+                    <center><button class="add-cart-button" onclick="addProductCart('Bukayo with Palitaw', 30)">Add to Cart</button></center>
+                </div>
+                
+                <div class="product-box">
+                    <img src="Photos/ilonggo.jpg" alt="Bukayo Ilonggo">
+                    <h3>Bukayo Ilonggo</h3>
+                    <p>Sweet and crunchy Bukayo, made from all-natural coconut. Perfect as a snack or a gift!</p>
+                    <p>1 Pack.</p>
+                    <span class="product-price">₱65</span>
+                    <center><button class="add-cart-button" onclick="addProductCart('Bukayo with Palitaw', 65)">Add to Cart</button></center>
+                </div>
+                
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="Script/data/globalSaveData.js"></script>
+    <script src="Script/pages/products.js"></script>
+    <script src="Script/pages/cart.js"></script>
+    <script>
+        updateCartCounter();
+    </script>
+
+</body>
+</html>

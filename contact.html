@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="Styles/pages/contact.css">
+</head>
+<body style="background-image: url(Photos/bg.jpg)">
+
+    <!-- Navbar -->
+    <nav class="animateNav" id="navMenu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li style="margin-left: auto;">
+                <a href="login.html" id="loginBtn">
+                    <i class="fa-solid fa-user"></i> Login
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section animate" id="contact-area">
+        <div class="container">
+            <h2 class="section-heading">Contact Us</h2>
+            <p class="contact-intro">Have questions or want to place an order? Send us a message!</p>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Other Ways to Reach Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +63 9269 92 4246</p>
+                <p><i class="fa-solid fa-envelope"></i> contact.josephinebukayooficial6@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Sablayan, Philippines</p>
+            </div>
+        </div>
+    </section>
+<script src="Script/data/globalSaveData.js"></script>
+    <script src="Script/pages/contact.js"></script>
+</body>
+</html>

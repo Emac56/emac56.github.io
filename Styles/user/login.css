@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e8b76f;
+    --text-color: #2c3e50;
+    --light-bg: #f7f3e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    animation: slideUp 0.8s ease-out;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.login-container .subtitle {
+    color: #999;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.input-group {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.input-group input:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    background: white;
+    box-shadow: 0 0 15px rgba(232, 183, 111, 0.2);
+}
+
+/* Buttons */
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a1a1a 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #f7da9d 100%);
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(232, 183, 111, 0.3);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+.forgot-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot-link a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.forgot-link a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}

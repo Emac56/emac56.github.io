@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="stylesheet" href="Styles/user/signup.css">
+  <title>Sign Up</title>
+</head>
+<body style="background-image: url('Photos/bg.jpg')">
+
+  <!-- NEW WRAPPER DIV -->
+  <div class="signup-container">
+
+    <h2>Create Account</h2>
+
+    <label for="fullName">Full Name</label><br>
+    <input type="text" id="fullName" name="fullName" placeholder="Your full name" autocomplete="name" aria-label="Full name"><br><br>
+
+    <label for="email">Email Address</label><br>
+    <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" aria-label="Email address"><br><br>
+
+    <label for="newUser">Username</label><br>
+    <input type="text" id="newUser" name="username" placeholder="Choose username" autocomplete="username" aria-label="Username"><br><br>
+
+    <label for="newPass">Password</label><br>
+    <div class="pwd-wrap">
+      <input type="password" id="newPass" name="password" placeholder="Enter password" autocomplete="new-password" aria-label="Password">
+      <button type="button" class="toggle-password" data-target="newPass" aria-pressed="false">Show</button>
+    </div>
+    <br>
+
+    <label for="confirmPass">Confirm Password</label><br>
+    <div class="pwd-wrap">
+      <input type="password" id="confirmPass" placeholder="Confirm password" autocomplete="new-password" aria-label="Confirm password">
+      <button type="button" class="toggle-password" data-target="confirmPass" aria-pressed="false">Show</button>
+    </div>
+    <br>
+
+    <button id="signupBtn">Sign Up</button>
+    <button type="button" onclick="window.location.href='login.html'">Already have an account? Login</button>
+
+  </div>
+  <!-- END WRAPPER -->
+
+  <script src="Script/auth/passwordToggle.js"></script>
+  <script src="Script/auth/signup.js"></script>
+  <script src="Script/data/globalSaveData.js"></script>
+</body>
+</html>

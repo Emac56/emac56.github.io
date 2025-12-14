@@ -1,0 +1,149 @@
+/* GENERAL PAGE STYLE */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("../../Photos/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 36px;
+    color: #f5f5f5;
+    font-weight: 700;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    letter-spacing: -1px;
+}
+
+/* GLASS CARD */
+#profileInfo {
+    max-width: 520px;
+    margin: 30px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 25px;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    animation: slideUp 0.8s ease-out;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#profileInfo:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Profile text */
+#profileInfo p {
+    margin: 18px 0;
+    font-size: 18px;
+    border-left: 4px solid linear-gradient(135deg, #e8b76f, #f7da9d);
+    padding-left: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    opacity: 0.95;
+    transition: all 0.3s ease;
+}
+
+#profileInfo p:hover {
+    padding-left: 20px;
+    opacity: 1;
+}
+
+#profileInfo strong {
+    color: #f7da9d;
+    font-weight: 700;
+}
+
+/* BUTTONS */
+button {
+    display: block;
+    width: 90%;
+    max-width: 380px;
+    margin: 20px auto;
+    padding: 16px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #e8b76f, #f7da9d);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(232, 183, 111, 0.4);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* Home Button (darker) */
+#btnHome {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+#btnHome:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 480px) {
+    #profileInfo {
+        padding: 28px;
+        margin: 20px 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 14px 18px;
+        width: 85%;
+    }
+
+    #profileInfo p {
+        font-size: 16px;
+        margin: 14px 0;
+    }
+}

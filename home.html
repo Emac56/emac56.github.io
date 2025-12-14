@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Josephine's Special Bukayo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="Styles/pages/home.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body style="background-image: url(Photos/bg.jpg);">
+  
+    <!-- Navbar -->
+    <nav class="animateNav" id="navMenu">
+        <ul>
+            
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+             
+            <ul>
+            <li style="margin-left: auto;">
+                <a href="login.html" id="loginBtn">
+                    <i class="fa-solid fa-user"></i> Login
+                </a>
+                <a href="#" id="logoutBtn" style="display:none;">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Head Section -->
+    <header class="head-container" id="animate">
+        <div class="head-text">
+            <h1>Josephine's<br>Special Bukayo🥥</h1>
+            <p id="subtitle">Naturally Sweet.<br>Truly Filipino</p>
+            <button id="Order-Button" onclick="window.location.href='products.html'">Order Now</button>
+        </div>
+        <div class="head-image" id="animate">
+            <img src="Photos/authentic.jpg" id="homeImage" alt="Bukayo">
+        </div>
+    </header>
+
+    <script src="Script/data/globalSaveData.js"></script>
+    <script src="Script/pages/home.js"></script>
+</body>
+</html>
